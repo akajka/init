@@ -1,1 +1,2 @@
+#!/bin/bash
 host slash16.org | grep address | awk '/address/{print $4}'
