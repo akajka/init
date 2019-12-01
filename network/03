@@ -1,2 +1,2 @@
 #!/bin/bash
-ifconfig en2 | awk '/ether/{print $2}'
+networksetup -getmacaddress 'Bluetooth PAN' | awk '{print $3}'
